@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Color Match"
+  short_description: "Match A-roll and B-roll color locally"
+  default_prompt: "Use $match-color to make these A-roll and B-roll shots look like one coherent video."
