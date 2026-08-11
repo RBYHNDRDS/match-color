@@ -7,3 +7,5 @@ __pycache__/
 *.wav
 *.json
 !agents/openai.yaml
+!assets/demo.mp4
+!assets/demo.gif

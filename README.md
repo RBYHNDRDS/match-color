@@ -6,6 +6,16 @@ Give a skill-compatible agent a preferred reference shot and a target clip. The 
 
 The source footage stays unchanged and no media is uploaded.
 
+## See it work
+
+<p align="center">
+  <a href="assets/demo.mp4?raw=1">
+    <img src="assets/demo.gif" alt="Before-and-after color match: a flat, cool source becomes a coherent matched shot" width="100%" />
+  </a>
+</p>
+
+<p align="center"><sub>Original synthetic demo. The “after” is rendered by the bundled matcher. Click the preview for the full-quality MP4.</sub></p>
+
 ## What it does
 
 - Matches a B-roll or second-camera clip to a preferred A-roll reference.
@@ -22,6 +32,7 @@ The source footage stays unchanged and no media is uploaded.
 - `SKILL.md` — the complete agent workflow, matching guidance, and visual QA rules.
 - `scripts/match_color.py` — analyzes two shots, reports the proposed correction, and renders the matched output.
 - `agents/openai.yaml` — optional UI metadata for OpenAI-compatible skill hosts.
+- `assets/demo.gif` and `assets/demo.mp4` — an original synthetic before-and-after demonstration.
 
 ## Requirements
 
@@ -167,7 +178,7 @@ This is a technical first pass, not a replacement for visual judgment. Skin, whi
 ## Privacy and safety
 
 - Video, audio, sample data, and reports stay local.
-- The repository contains no client footage or example media.
+- The repository contains no client footage; its only example media is the original synthetic demo above.
 - Source files are never replaced.
 - Failed renders remain partial and cannot masquerade as completed outputs.
 - HDR footage is rejected rather than incorrectly processed as SDR.
